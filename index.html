@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Document</title>
+
+</head>
+<style>
+/* contact section start */
+.contact-section{
+    padding: 40;
+    margin-right: 90px;
+  }
+  
+  .contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .contact-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .contact-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #0ef;
+    color: #0ef;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  .contact-icon:hover{
+    transform: rotate(85deg);
+  }
+  .contact-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+  }
+  .contact-box:hover .contact-icon{
+    background: #0ef;
+    color: #ddd;
+  }
+  .contact-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .contact-desc{
+    font-size: 19px;
+  }
+  
+  @media screen and (max-width:960px) {
+    .contact-box{
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .contact-box{
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .contact-box{
+      max-width: 100%;
+    }
+  }
+</style>
+<body>
+    <div class="header">
+      <a href="#" class="logo">Logo</a>
+    </div>
+    <header>
+    
+      <nav class="navbar">
+          <ul>
+              <li><a href="#home" class="link">  01 Home</a></li>
+              <li><a href="#skills" class="link"> 02 Skills</a></li>
+              <li><a href="#projects" class="link"> 03 Projects</a></li>
+              <li><a href="#contact" class="link"> 04 Contact</a></li>
+          </ul>
+      </nav>
+  
+  </header>
+  <!--home section-->
+    <section class="home" id="home">
+      <div class="home-content">
+         <h1>Johannes</h1>
+         <p>Software Engineer, Front End & App Developer.</p>
+         <div class="social-media">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+         </div>
+      </div>
+    </section>
+    <!--skills section-->
+    <section class="skillss" id="skills">
+      <center><h1>𝒮𝓀𝒾𝓁𝓁𝓈</h1></center>
+      <div id="skilld" style="display: flex;gap: 300px;">
+         <span class="Sphere"></span>
+         <div class="skills" >
+            <div class="skill">
+               <div class="skill-name"><img src="img/html.png" class="skill-img"></div>
+               <div class="skill-bar">
+                 <div class="skill-per" per="60"></div>
+               </div>
+             </div>
+             <div class="skill">
+               <div class="skill-name"><img src="img/css.png" class="skill-img"></div>
+               <div class="skill-bar">
+                 <div class="skill-per" per="60"></div>
+               </div>
+             </div>
+             <div class="skill">
+               <div class="skill-name"><img src="img/js.png" class="skill-img"></div>
+               <div class="skill-bar">
+                 <div class="skill-per" per="60"></div>
+               </div>
+             </div>
+             <div class="skill">
+               <div class="skill-name"><img src="img/php.jpg" class="skill-img"></div>
+               <div class="skill-bar">
+                 <div class="skill-per" per="60"></div>
+               </div>
+             </div>
+             <div class="skill">
+               <div class="skill-name"><img src="img/c.png" class="skill-img"></div>
+               <div class="skill-bar">
+                 <div class="skill-per" per="60"></div>
+               </div>
+             </div>
+      
+            <div class="skill">
+              <div class="skill-name"><img src="img/unity.png" class="skill-img"></div>
+              <div class="skill-bar">
+                <div class="skill-per" per="70"></div>
+              </div>
+            </div>
+      
+            <div class="skill">
+              <div class="skill-name"><img src="img/vs.png" class="skill-img"></div>
+              <div class="skill-bar">
+                <div class="skill-per" per="60"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+   </section>
+   <!--projects section-->
+    <section class="projects" id="projects">
+      <div class="container">
+         <div class="items-link">
+            <span class="item-link menu-active" data-name="all">All Projects</span>
+            <span class="item-link" data-name="website">Website</span>
+            <span class="item-link" data-name="application">Application</span>
+            <span class="item-link" data-name="blog">Blog</span>
+         </div>
+         <div class="gallery">
+            <div class="project-img" data-name="website">
+               <img src="img/proj1.png" alt="">
+               <div class="overlay">
+                  <h4>Project Title</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="action-area">
+                     <a href="" class="btn btn-light">Live Demo</a>
+                  </div>
+               </div>
+            </div>
+            <div class="project-img" data-name="application">
+               <img src="img/proj2.jpg" alt="">
+               <div class="overlay">
+                  <h4>Project Title</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="action-area">
+                     <a href="" class="btn btn-light">Live Demo</a>
+                  </div>
+               </div>
+            </div>
+            <div class="project-img" data-name="blog">
+               <img src="img/proj3.jpg" alt="">
+               <div class="overlay">
+                  <h4>Project Title</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="action-area">
+                     <a href="" class="btn btn-light">Live Demo</a>
+                  </div>
+               </div>
+            </div>
+            <div class="project-img" data-name="website">
+               <img src="img/proj4.jpg" alt="">
+               <div class="overlay">
+                  <h4>Project Title</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="action-area">
+                     <a href="" class="btn btn-light">Live Demo</a>
+                  </div>
+               </div>
+            </div>
+            <div class="project-img" data-name="website">
+               <img src="img/proj5.png" alt="">
+               <div class="overlay">
+                  <h4>Project Title</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="action-area">
+                     <a href="" class="btn btn-light">Live Demo</a>
+                  </div>
+               </div>
+            </div>
+            <div class="project-img" data-name="application">
+               <img src="img/proj6.png" alt="">
+               <div class="overlay">
+                  <h4>Project Title</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="action-area">
+                     <a href="" class="btn btn-light">Live Demo</a>
+                  </div>
+               </div>
+            </div>
+            <div class="project-img" data-name="blog">
+               <img src="img/proj7.jpg" alt="">
+               <div class="overlay">
+                  <h4>Project Title</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="action-area">
+                     <a href="" class="btn btn-light">Live Demo</a>
+                  </div>
+               </div>
+            </div>
+            <div class="project-img" data-name="application">
+               <img src="img/proj8.jpg" alt="">
+               <div class="overlay">
+                  <h4>Project Title</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="action-area">
+                     <a href="" class="btn btn-light">Live Demo</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </section>
+    <!--contact section-->
+    <section class="contact" id="contact">
+      <center><h1>𝓒𝓸𝓷𝓽𝓪𝓬𝓽 𝓤𝓼</h1></center>
+      <div class="wrapper">
+         <div class="contact-section">
+               <div class="contact-container">
+                 <div class="contact-box">
+                   <div class="contact-icon">
+                     <i class="far fa-envelope"></i>
+                   </div>
+                   <div class="contact-title">E-mail</div>
+                   <div class="contact-desc">
+                     examplegmail133@gmail.com
+                   </div>
+                 </div>
+                 <div class="contact-box">
+                   <div class="contact-icon">
+                     <i class="fas fa-map"></i>
+                   </div>
+                   <div class="contact-title">Location</div>
+                   <div class="contact-desc">
+                     Germany
+                   </div>
+                 </div>
+                 <div class="contact-box">
+                   <div class="contact-icon">
+                     <i class="fas fa-mobile-alt"></i>
+                   </div>
+                   <div class="contact-title">Mobile</div>
+                   <div class="contact-desc">
+                    +111 222 333 444
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+    </section>
+    <footer>
+      <div class="container">
+          <p class="end">Created by xxxx xxxxxx.</p>
+      </div>
+  </footer>
+    <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>-->
+  <!--skill bar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- Including the TagCloud.js script CDN in the document    -->
+   <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+   <script src="js/script.js"></script>
+</body>
+</html>
